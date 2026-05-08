@@ -1,0 +1,32 @@
+{
+    "folder-customization.folders": [
+        {
+            "path": "industrial-training\\resources\\views\\mains\\",
+            "color": "foldercustomization.AnsiColor82"
+        },
+        {
+            "path": "industrial-training\\resources\\views\\reports\\",
+            "color": "foldercustomization.AnsiColor50"
+        },
+        {
+            "path": "industrial-training\\resources\\views\\statements\\",
+            "color": "foldercustomization.AnsiColor197"
+        },
+        {
+            "path": "industrial-training\\resources\\views\\layouts\\",
+            "color": "foldercustomization.AnsiColor220"
+        },
+        {
+            "path": "industrial-training\\resources\\views\\",
+            "color": "foldercustomization.AnsiColor205"
+        },
+        {
+            "path": "industrial-training\\app\\Http\\Controllers\\",
+            "color": "foldercustomization.AnsiColor149"
+        },
+        {
+            "path": "industrial-training\\app\\Models\\",
+            "color": "foldercustomization.AnsiColor174"
+        }
+    ]
+}
