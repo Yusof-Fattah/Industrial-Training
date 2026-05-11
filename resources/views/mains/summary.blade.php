@@ -67,7 +67,24 @@
 @section('content')
 
 <!-- Stats Row -->
-<div class="row g-3 mb-3">
-    
+<div class="col-md-5">
+    <div class="page-header">
+        <div class="card-body">
+            <h4>EXECUTIVE SUMMARY</h4>
+            <small>
+                This is a simple executive summary of the weekly reports.
+            </small>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-body">
+            <small>
+                This is a simple executive summary of the weekly reports.
+            </small>
+        </div>
+    </div>
 </div>
 @endsection

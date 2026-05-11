@@ -16,8 +16,8 @@
 
     <style>
         :root {
-            --primary: #83fda1;
-            --primary-dark: #76ed3a;
+            --primary: #8B5CF6;
+            --primary-dark: #7C3AED;
             --primary-light: #A78BFA;
             --primary-pale: #EDE9FE;
             --primary-xpale: #F5F3FF;

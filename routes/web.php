@@ -5,13 +5,13 @@ use App\Http\Controllers\WeekController;
 
 Route::get('/weekly', [WeekController::class, 'index'])->name('weekly');
 
+Route::get('/summary', function () {return view('mains.summary');})->name('summary');
+
 Route::get('/weekly/{weeklyReport}', [WeekController::class, 'show'])->name('weekly.show');
 
 Route::get('/', function () {return view('mainpage');});
 
 Route::get('/mainpage', function () {return view('mainpage');})->name('mainpage');
-
-Route::get('/summary', function () {return view('mains/summary');})->name('summary');
 
 Route::get('/company', function () {return view('mains/company');})->name('company');
 
