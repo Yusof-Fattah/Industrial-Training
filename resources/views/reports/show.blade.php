@@ -30,7 +30,7 @@
             <div class="card-header">Weekly Report Details</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <img src="{{ asset('storage/attachments/' . $weeklyReport->image_loc) }}" alt="Weekly Report Image" class="img-fluid mb-3">
+                    <img src="{{ asset('storage/weekly/' . $weeklyReport->image_loc) }}" alt="Weekly Report Image" class="img-fluid mb-3">
                 </div>
             </div>
         </div>

@@ -61,17 +61,53 @@
         font-size: 0.8rem;
         flex-shrink: 0;
     }
+    h5,h2{
+        color:#1e1b4b;
+    }
 </style>
 @endpush
 
 @section('content')
 
 <!-- Stats Row -->
-<div class="row g-3 mb-3">
-    <div class="col-6 col-md-8">
+<div class="row g-3">
+    <div class="col-md-8 mb-3">
         <h1 class="display-4">FINAL REPORT OF INDUSTRIAL TRAINING</h1>
         <small class="display-6">SESSION 2 2025 / 2026</small>
+    </div>
+
+    <div class="col-md-4"></div>
+
+    <div class="col-md-3">
         
+    </div>
+
+    <div class="col-md-9">
+        <div class="card">
+            <div class="card-body">
+                <h5>Intern Declaration</h5>
+                <h2>Muhamad Yusof Alfattah Bin Rozaidy</h2>
+                <div class="card-body ">    
+                    <div class="row col-md-12 gap-1 ">
+                        <div class="card outstanding-card col-md-5 h-100">
+                            <h6>Student Details</h6>
+                            <small>
+                                17DDT23F1068</br>
+                                Diploma in Computer Technology (Technology Digital)</br>
+                                05 January 2026 - 22 May 2026 </br>
+                            </small>
+                        </div>
+                        <div class="card outstanding-card col h-100 ">
+                            <h6>Internship Details</h6>
+                            <small>
+                                Thomson Hospital Kota Damansara Sdn. Bhd.</br>
+                                05 January 2026 - 22 May 2026 </br>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
