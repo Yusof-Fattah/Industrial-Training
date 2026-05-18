@@ -61,6 +61,11 @@
         font-size: 0.8rem;
         flex-shrink: 0;
     }
+
+    h5,h4,h2{
+        color:#1e1b4b;
+    }
+
 </style>
 @endpush
 
@@ -68,5 +73,31 @@
 
 <!-- Stats Row -->
 <div class="row g-3 mb-3">
+    <div class="col-md-5">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4>Technical Report</h4>
+                <small>
+                    This is a simple technical report information.
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card mb-4">
+            <div class="card-body">
+                <small>
+                    During the span of my internship in Thomson Hospital Kota Damansara (THKD), I were task with wide range of 
+                    responsibilities that allowed me to gain valuable experience in the information technology department within the healthcare industry. 
+                    I am involved in various aspects of IT operations, including software development and maintenance and technical support. 
+                    My role included assisting with software installations, troubleshooting technical issues, and providing user support. 
+                    I also had the opportunity to work on projects related to improving hospital applications and enhancing user experience. 
+                    Overall, my internship at THKD provided me with a comprehensive understanding of the healthcare and professional work environment and 
+                    helped me develop essential skills for my future career in the industry.
+                </small>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection

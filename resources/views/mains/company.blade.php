@@ -73,7 +73,7 @@
         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
-    h4{
+    h4,h2{
         color:#1e1b4b;
     }
 </style>
@@ -94,8 +94,8 @@
         </div>
     </div>
 
-    <div class="col-md-12 mb-3">
-        <div class="card">
+    <div class="col-md-12">
+        <div class="card stat-card h-200">
             <div class="card-body d-flex flex-column-reverse flex-md-row gap-auto">
                 <div class="col-md-7 mt-3">
                     <small>
@@ -111,25 +111,27 @@
         </div>
     </div>
 
-    <div class="col-md-12 mb-3">
-        <div class="card">
+    <div class="col-md-12">
+        <div class="card stat-card">
             <div class="card-body">
             <h4>About THKD</h4>
-                <img src="{{ asset('storage/mains/company.png') }}" class="img col-12 col-md-12 mb-3 my-3">
+                <img src="{{ asset('storage/mains/company.png') }}" class="img stat-card col-12 col-md-12 mb-3 my-3">
                 <small>
                     Established in 2008, Thomson Hospital Kota Damansara (THKD) is the flagship hospital of TMC Life Sciences Berhad (TMCLS), 
                     offering a wide array of medical specialties. Conveniently located in Kota Damansara, the hospital is seamlessly connected 
-                    to Kuala Lumpur via major roads and the adjacent Kota Damansara MRT station. It also sits in close proximity to premier neighborhoods, 
+                    to Kuala Lumpur via major roads and the adjacent Kota Damansara MRT station. 
+                </br></br>
+                    It also sits in close proximity to premier neighborhoods, 
                     including Tropicana, Mutiara Damansara, and Bandar Utama. With 554 beds, state-of-the-art technology, and a commitment to 
                     excellent customer service, THKD delivers comprehensive medical care of the highest international standards.
                 </small>
-                <img src="{{ asset('storage/mains/company3.png') }}" class="img col-12 col-md-8 mb-3 mx-auto mt-3">
+                <img src="{{ asset('storage/mains/company3.png') }}" class="img stat-card col-12 col-md-8 mb-3 mx-auto mt-3">
             </div>
         </div>
     </div>
 
-    <div class="col-md-6 mb-3">
-        <div class="card">
+    <div class="col-md-3">
+        <div class="card stat-card h-100">
             <div class="card-body">
                 <h4 class="mb-3">Vision</h4>
                 <small>
@@ -139,8 +141,23 @@
         </div>
     </div>
 
-    <div class="col-md-6 mb-3">
-        <div class="card">
+    <div class="col-md-3">
+        <div class="card stat-card h-100">
+            <div class="card-body">
+                <h4 class="mb-3">Core Values</h4>
+                <table>
+                    <tr><td style="vertical-align: top;"><h2>T</h2></td><td>rust</td></tr>
+                    <tr><td style="vertical-align: top;"><h2>C</h2></td><td>ompassion</td></tr>
+                    <tr><td style="vertical-align: top;"><h2>A</h2></td><td>ccountability</td></tr>
+                    <tr><td style="vertical-align: top;"><h2>R</h2></td><td>espect</td></tr>
+                    <tr><td style="vertical-align: top;"><h2>E</h2></td><td>empower Agility</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card stat-card h-100">
             <div class="card-body">
                 <h4 class="mb-3">Mission</h4>
                 <small>
@@ -155,5 +172,16 @@
             </div>
         </div>
     </div>
+    
+
+    <div class="col-md-12">
+        <div class="card stat-card">
+            <div class="card-body">
+            <h4>Organization Chart</h4>
+                <img src="{{ asset('storage/mains/company.png') }}" class="img stat-card col-12 col-md-12 mb-3 my-3">
+            </div>
+        </div>
+    </div>
+
 </div>
 @endsection
