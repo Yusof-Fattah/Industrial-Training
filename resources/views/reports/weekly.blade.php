@@ -68,16 +68,31 @@
         gap: 8px;
         padding: 8px;
     }
+
+    h5,h4,h2{
+        color:#1e1b4b;
+    }
 </style>
 @endpush
 
 @section('content')
+<div class="col-md-5">
+    <div class="card mb-4">
+        <div class="card-body">
+            <h4>Weekly Reports</h4>
+            <small>
+                This is a list reports of the weekly reports.
+            </small>
+        </div>
+    </div>
+</div>
+
 <div class="row g-3 mb-3">
     <div class="week-grid">
         @foreach ($weeks as $week)
-            <div class="card outstanding-card h-100">
+            <div class="card outstanding-card stat-card h-100">
                 <div class="card-body text-center py-3">
-                    <div style="font-size:2rem;font-weight:800;letter-spacing:-0.03em;">
+                    <div style="font-size:1.25rem;font-weight:500;letter-spacing:-0.03em;">
                         {{ $week->title }}
                     </div>
                     <hr style="border-color:rgba(255,255,255,0.2);margin:1rem 0 0.75rem;">

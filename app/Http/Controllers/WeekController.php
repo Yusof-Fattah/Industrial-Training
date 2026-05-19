@@ -15,4 +15,5 @@ class WeekController extends Controller
         
         return view('reports.show', compact('weeklyReport'));
     }   
+
 }

@@ -61,6 +61,21 @@
         font-size: 0.8rem;
         flex-shrink: 0;
     }
+
+    .img {
+        border-radius: 1.5rem;
+        max-height: 350px;
+        min-height: 200px;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        border-radius: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    h4,h2{
+        color:#1e1b4b;
+    }
 </style>
 @endpush
 
@@ -68,5 +83,105 @@
 
 <!-- Stats Row -->
 <div class="row g-3 mb-3">
+    <div class="col-md-5">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4>Company Background</h4>
+                <small>
+                    This is a simple company background information.
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card stat-card h-200">
+            <div class="card-body d-flex flex-column-reverse flex-md-row gap-auto">
+                <div class="col-md-7 mt-3">
+                    <small>
+                        Thomson Hospital Kota Damansara (THKD) is a private hospital located in Kota Damansara, Petaling Jaya, Malaysia,
+                        where I completed my industrial training for 4 months and 17 days in software field development with a gist of IT support.
+                    </small>
+                </div>
+
+                <div class="card-body">
+                    <img src="{{ asset('storage/mains/company2.png') }}" class="img-fluid ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card stat-card">
+            <div class="card-body">
+            <h4>About THKD</h4>
+                <img src="{{ asset('storage/mains/company.png') }}" class="img stat-card col-12 col-md-12 mb-3 my-3">
+                <small>
+                    Established in 2008, Thomson Hospital Kota Damansara (THKD) is the flagship hospital of TMC Life Sciences Berhad (TMCLS), 
+                    offering a wide array of medical specialties. Conveniently located in Kota Damansara, the hospital is seamlessly connected 
+                    to Kuala Lumpur via major roads and the adjacent Kota Damansara MRT station. 
+                </br></br>
+                    It also sits in close proximity to premier neighborhoods, 
+                    including Tropicana, Mutiara Damansara, and Bandar Utama. With 554 beds, state-of-the-art technology, and a commitment to 
+                    excellent customer service, THKD delivers comprehensive medical care of the highest international standards.
+                </small>
+                <img src="{{ asset('storage/mains/company3.png') }}" class="img stat-card col-12 col-md-8 mb-3 mx-auto mt-3">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card stat-card h-100">
+            <div class="card-body">
+                <h4 class="mb-3">Vision</h4>
+                <small>
+                    To help people lead healthier lives by making tertiary healthcare services accessible, accountable and sustainable.
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card stat-card h-100">
+            <div class="card-body">
+                <h4 class="mb-3">Core Values</h4>
+                <table>
+                    <tr><td style="vertical-align: top;"><h2>T</h2></td><td>rust</td></tr>
+                    <tr><td style="vertical-align: top;"><h2>C</h2></td><td>ompassion</td></tr>
+                    <tr><td style="vertical-align: top;"><h2>A</h2></td><td>ccountability</td></tr>
+                    <tr><td style="vertical-align: top;"><h2>R</h2></td><td>espect</td></tr>
+                    <tr><td style="vertical-align: top;"><h2>E</h2></td><td>empower Agility</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card stat-card h-100">
+            <div class="card-body">
+                <h4 class="mb-3">Mission</h4>
+                <small>
+                   Regionally </br>
+                <table>
+                    <tr><td style="vertical-align: top;">•</td><td>To be the largest one-stop comprehensive tertiary care provider.</td></tr>
+                    <tr><td style="vertical-align: top;">•</td><td>To be the most advanced in women & children’s healthcare.</td></tr>
+                    <tr><td style="vertical-align: top;">•</td><td>To be the most trusted hospital brand.</td></tr>
+                    <tr><td style="vertical-align: top;">•</td><td>To be the healthcare employer & partner of choice.</td></tr>
+                </table>
+                </small>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-md-12">
+        <div class="card stat-card">
+            <div class="card-body">
+            <h4>Organization Chart</h4>
+                <img src="{{ asset('storage/mains/company.png') }}" class="img stat-card col-12 col-md-12 mb-3 my-3">
+            </div>
+        </div>
+    </div>
+
 </div>
 @endsection

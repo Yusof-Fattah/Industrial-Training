@@ -16,8 +16,8 @@
 
     <style>
         :root {
-            --primary: #83fda1;
-            --primary-dark: #76ed3a;
+            --primary: #8B5CF6;
+            --primary-dark: #7C3AED;
             --primary-light: #A78BFA;
             --primary-pale: #EDE9FE;
             --primary-xpale: #F5F3FF;
@@ -210,6 +210,7 @@
             box-shadow: 0 2px 8px rgba(139,92,246,0.07);
             background: rgba(255,255,255,0.95);
             transition: box-shadow 0.2s ease, transform 0.2s ease;
+            max-height: 200vh;
         }
 
         .card:hover { box-shadow: 0 4px 20px rgba(139,92,246,0.12); }
@@ -530,10 +531,10 @@
 
             <div class="nav-label">Reports</div>
             <a href="{{ route('weekly') }}" class="nav-link">
-                <i class="bi bi-calendar-week"></i> Weekly Reports
+                <i class="bi bi-calendar-week"></i> Weekly
             </a>
              <a href="{{ route('technical') }}" class="nav-link">
-                <i class="bi bi-back"></i> Technical Reports
+                <i class="bi bi-back"></i> Technical
             </a>
             
             <div class="nav-label">Statements</div>
