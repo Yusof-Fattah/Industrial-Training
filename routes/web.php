@@ -15,7 +15,9 @@ Route::get('/mainpage', function () {return view('mainpage');})->name('mainpage'
 
 Route::get('/company', function () {return view('mains/company');})->name('company');
 
-Route::get('/technical', function () {return view('reports/technical');})->name('technical');
+// In web.php
+Route::get('/technical', [\App\Http\Controllers\TechnicalController::class, 'technical'])->name('technical');
+Route::get('/technical/{id}', [\App\Http\Controllers\TechnicalController::class, 'show'])->name('technical.show');
 
 Route::get('/reference', function () {return view('statements/reference');})->name('reference');
 

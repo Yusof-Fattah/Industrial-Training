@@ -87,7 +87,7 @@
     <div class="col-md-3">
         <div class="card stat-card">
             <div class="card-body">
-                <img src="{{ asset('storage/mains/ryan gosling.png') }}" class="img col-12 col-md-12 mb-3 my-3">
+                <img src="{{ asset(\App\Models\MainPages::find(1)->image_loc) }}" class="img col-12 col-md-12 mb-3 my-3">
             </div>
         </div>
     </div>

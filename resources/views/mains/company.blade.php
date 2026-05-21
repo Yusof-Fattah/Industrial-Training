@@ -69,12 +69,30 @@
         height: auto;
         display: block;
         object-fit: cover;
-        border-radius: 1.5rem;
         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
-    h4,h2{
-        color:#1e1b4b;
+    /* Target Class Styling for Lightbox Triggers */
+    .lightbox-img {
+        cursor: pointer;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .lightbox-img:hover {
+        transform: scale(1.01);
+        opacity: 0.9;
+    }
+
+    #lightboxModal .modal-dialog {
+        max-width: 90vw;
+    }
+    #lightboxModal img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    h4, h2 {
+        color: #1e1b4b;
     }
 </style>
 @endpush
@@ -105,7 +123,8 @@
                 </div>
 
                 <div class="card-body">
-                    <img src="{{ asset('storage/mains/company2.png') }}" class="img-fluid ">
+                    <!-- Added lightbox-img class -->
+                    <img src="{{ asset(\App\Models\MainPages::find(2)->image_loc) }}" class="img-fluid lightbox-img">
                 </div>
             </div>
         </div>
@@ -115,7 +134,8 @@
         <div class="card stat-card">
             <div class="card-body">
             <h4>About THKD</h4>
-                <img src="{{ asset('storage/mains/company.png') }}" class="img stat-card col-12 col-md-12 mb-3 my-3">
+                <!-- Added lightbox-img class -->
+                <img src="{{ asset(\App\Models\MainPages::find(3)->image_loc) }}" class="img stat-card col-12 col-md-12 mb-3 my-3 lightbox-img">
                 <small>
                     Established in 2008, Thomson Hospital Kota Damansara (THKD) is the flagship hospital of TMC Life Sciences Berhad (TMCLS), 
                     offering a wide array of medical specialties. Conveniently located in Kota Damansara, the hospital is seamlessly connected 
@@ -125,7 +145,8 @@
                     including Tropicana, Mutiara Damansara, and Bandar Utama. With 554 beds, state-of-the-art technology, and a commitment to 
                     excellent customer service, THKD delivers comprehensive medical care of the highest international standards.
                 </small>
-                <img src="{{ asset('storage/mains/company3.png') }}" class="img stat-card col-12 col-md-8 mb-3 mx-auto mt-3">
+                <!-- Added lightbox-img class -->
+                <img src="{{ asset(\App\Models\MainPages::find(4)->image_loc) }}" class="img stat-card col-12 col-md-8 mb-3 mx-auto mt-3 lightbox-img">
             </div>
         </div>
     </div>
@@ -173,15 +194,41 @@
         </div>
     </div>
     
-
     <div class="col-md-12">
         <div class="card stat-card">
             <div class="card-body">
             <h4>Organization Chart</h4>
-                <img src="{{ asset('storage/mains/company.png') }}" class="img stat-card col-12 col-md-12 mb-3 my-3">
+                <!-- Added lightbox-img class -->
+                <img src="{{ asset(\App\Models\MainPages::find(5)->image_loc) }}" class="img stat-card col-12 col-md-12 mb-3 my-3 lightbox-img">
             </div>
         </div>
     </div>
-
 </div>
+
+<!-- Lightbox Modal -->
+<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0 text-center">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2" data-bs-dismiss="modal"></button>
+                <img id="lightboxImage" src="" alt="Preview" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</div>
+
+@push('scripts')
+<script>
+    // Wrapped in DOMContentLoaded to ensure elements are ready in dynamic Blade templates
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.lightbox-img').forEach(img => {
+            img.addEventListener('click', function () {
+                document.getElementById('lightboxImage').src = this.src;
+                new bootstrap.Modal(document.getElementById('lightboxModal')).show();
+            });
+        });
+    });
+</script>
+@endpush
+
 @endsection

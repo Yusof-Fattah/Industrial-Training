@@ -76,32 +76,34 @@
 @endpush
 
 @section('content')
-<div class="col-md-5">
-    <div class="card mb-4">
-        <div class="card-body">
-            <h4>Weekly Reports</h4>
-            <small>
-                This is a list reports of the weekly reports.
-            </small>
+<div class="row ">
+    <div class="col-md-5">
+        <div class="card mb-2">
+            <div class="card-body">
+                <h4>Weekly Reports</h4>
+                <small>
+                    This is a list reports of the weekly reports.
+                </small>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="row g-3 mb-3">
-    <div class="week-grid">
-        @foreach ($weeks as $week)
-            <div class="card outstanding-card stat-card h-100">
-                <div class="card-body text-center py-3">
-                    <div style="font-size:1.25rem;font-weight:500;letter-spacing:-0.03em;">
-                        {{ $week->title }}
+    <div class="row g-3 mb-3">
+        <div class="week-grid">
+            @foreach ($weeks as $week)
+                <div class="card outstanding-card stat-card h-100">
+                    <div class="card-body text-center py-3">
+                        <div style="font-size:1.25rem;font-weight:500;letter-spacing:-0.03em;">
+                            {{ $week->title }}
+                        </div>
+                        <hr style="border-color:rgba(255,255,255,0.2);margin:1rem 0 0.75rem;">
+                        <a onclick="window.location.href='{{ route('weekly.show', $week) }}'" class="btn btn-sm" style="background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.3);border-radius:8px;font-size:0.8rem;">
+                            <i class="bi bi-arrow-right me-1"></i> View Report
+                        </a>
                     </div>
-                    <hr style="border-color:rgba(255,255,255,0.2);margin:1rem 0 0.75rem;">
-                    <a onclick="window.location.href='{{ route('weekly.show', $week) }}'" class="btn btn-sm" style="background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.3);border-radius:8px;font-size:0.8rem;">
-                        <i class="bi bi-arrow-right me-1"></i> View Report
-                    </a>
                 </div>
-            </div>
-        @endforeach
+            @endforeach
+        </div>
     </div>
 </div>
 @endsection

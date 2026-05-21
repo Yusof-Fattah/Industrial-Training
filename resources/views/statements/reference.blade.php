@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Reference')
-@section('breadcrumb', 'Reference')
+@section('title', 'Conclusion')
+@section('breadcrumb', 'Conclusion')
 
 @push('styles')
 <style>
@@ -65,9 +65,35 @@
 @endpush
 
 @section('content')
-
-<!-- Stats Row -->
 <div class="row g-3 mb-3">
-    
+    <div class="col-md-5">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4>Reference</h4>
+                <small>
+                    This is a reference section.
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+    <div class="card">
+        <div class="card-body">
+            <small class="d-block mb-2">
+                <strong>THKD Informations. (2026.)</strong> Official website for Thomson Hospital Kota Damansara healthcare services.
+                <a href="https://www.thomsonhospitals.com/" target="_blank">(https://www.thomsonhospitals.com/)</a>
+            </small>
+            <small class="d-block mb-2">
+                <strong>Bootstrap Toolkit. (2026.)</strong> Open-source front-end framework for designing responsive mobile-first sites.
+                <a href="https://getbootstrap.com/" target="_blank">(https://getbootstrap.com/)</a>
+            </small>
+            <small class="d-block">
+                <strong>Laravel Framework. (2026.)</strong> Documentation for the PHP web application framework with expressive, elegant syntax.
+                <a href="https://laravel.com/docs/13.x" target="_blank">(https://laravel.com/docs/13.x)</a>
+            </small>
+        </div>
+    </div>
+</div>
 </div>
 @endsection
